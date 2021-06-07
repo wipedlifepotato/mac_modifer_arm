@@ -1,0 +1,10 @@
+(compile though ndk, and put as mac-changer in your phone, then use like to ->)
+cat /data/adb/post-fs-data.d/change-imei.sh                                                                                   
+```
+# fdisk (for found the block)
+mount -o remount,rw /dev/block/mmcblk0p22 /system 
+mount -o remount,rw /dev/block/mmcblk0p24  /data/
+cd /vendor/nvdata/
+mount . -o remount,rw
+sh /data/media/0/TWRP/change-imei-random.sh>log_imei_change
+```
